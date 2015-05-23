@@ -1,12 +1,18 @@
+/*
+** angular-datastorage version: 1.0.0 (https://github.com/Shinomix/angular-datastorage)
+** Simple configurable storage service using localStorage or sessionStorage key/value system. Include multiple objects setter and expiration timestamp management
+** 23-05-2015 - by : Maxence Haltel <maxence.haltel@gmail.com>
+*/
+
 (function() {
     'use strict';
 
     angular
-        .module('datastorage', [])
-        .service('DataStorage', DataStorageFunction);
+        .module('angular-datastorage', [])
+        .service('DataStorage', DataStorage);
 
 
-    function DataStorageFunction() {
+    function DataStorage() {
 
         var _settings = {
             type: 'localStorage'
